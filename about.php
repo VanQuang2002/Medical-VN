@@ -14,17 +14,17 @@
             <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="thucdon.php" method="GET">
-                    <input name="search" type="text" placeholder="Tìm món hoặc thức ăn">
+                    <input name="search" type="text" placeholder="Tìm thiết bị">
                 </form>
             </section>
             <section class="main">
                 <div class="row">
-                    <h3>Grap Food là gì?</h3>
-                    <p>Tại Grab, chúng tôi hiểu rằng một bữa ăn ngon có thể mang lại cho bạn sức khoẻ và tinh thần thoải mái nhất. Vì vậy, Grab cho ra mắt dịch vụ GrabFood, nhằm kết nối các nhà hàng, quán ăn tại địa phương với tất cả mọi người. Bạn chỉ cần đặt món ăn yêu thích trên GrabFood, đội ngũ giao hàng của chúng tôi sẽ nhanh chóng mang đến cho bạn bữa ăn nóng hổi và ngon lành.</p>
+                    <h3>Medical-VN là gì?</h3>
+                    <p>Tại Medical, chúng tôi hiểu rằng một thiết bị rẻ, tốt có thể mang lại cho bạn sức khoẻ và tinh thần thoải mái nhất. Vì vậy, Medical cho ra mắt dịch vụ Medical-VN, nhằm kết nối các khách hàng tại địa phương với Medical-VN. Bạn chỉ cần đặt một thiết bị cần thiết trên Medical-VN, đội ngũ giao hàng của chúng tôi sẽ nhanh chóng mang đến cho bạn thiết bị ngon, bổ, rẻ</p>
                 </div>
                 <div class="row">
-                    <h3>GrapFood hoạt động như thế nào?</h3>
-                    <p>GrabFood hoạt động từ 7h đến 22h hằng ngày, tuỳ theo khu vực của bạn và thời gian mở cửa cụ thể của từng nhà hàng, quán ăn.</p>
+                    <h3>Medical-VN hoạt động như thế nào?</h3>
+                    <p>Medical-VN hoạt động từ 7h đến 22h hằng ngày, hoặc bất cứ khi nào bận cần có thể liên hệ chúng tôi qua email để được xử lý vào thời điểm sớm nhất</p>
                 </div>
                 <div class="row">
                     <img src="images/bg/GrabFood.jpg" alt="">
