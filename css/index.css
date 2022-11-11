@@ -12,7 +12,7 @@ body {
 #wrapper header {
   width: 100%;
   margin: 0px auto;
-  background-color: #0f62f9 ;
+  background-color: #22c7dd ;
   padding: 10px 0;
 }
 #wrapper header .container {
@@ -550,7 +550,7 @@ footer .container .bottom{
   padding: 20px 0;
 } */
 footer {
-  background-color: #0f62f9;
+  background-color: #22c7dd;
   width: 100%;
   margin: 0px auto;
   margin-top: 1rem;
