@@ -1,7 +1,7 @@
 <section class="recently">
     <a href="#trasua"></a>
                 <div class="title">
-                    <h1>Trà sữa</h1>
+                    <h1>Nhiệt kế</h1>
                 </div>
                 <div class="product-recently">
                     <div class="row">
