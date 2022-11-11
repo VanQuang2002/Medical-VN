@@ -19,7 +19,6 @@ require_once('../database/dbhelper.php');
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="plugin/fontawesome/css/all.css"> -->
     <link rel="stylesheet" href="fonts/fontawesome-free-6.2.0-web/css/all.min.css">
-
     <link rel="stylesheet" href="header.css">
 
     <title>Đăng nhập</title>
@@ -29,7 +28,7 @@ require_once('../database/dbhelper.php');
     <div id="wrapper" style="padding-bottom: 4rem;">
         <header>
             <div class="container">
-            <section class="logo">
+                <section class="logo">
                     <a href="index.php">Medical VN</a>
                 </section>
                 <nav>
@@ -39,11 +38,11 @@ require_once('../database/dbhelper.php');
                             <a href="thucdon.php?page=thucdon">Danh mục</a>
                             <ul class="nav-con">
                                 <?php
-                                    $sql="SELECT * FROM category";
-                                    $result=executeResult($sql);
-                                    foreach($result as $item){
-                                        echo '<li><a href="thucdon.php?id_category=' . $item['id'] . '">'.$item['name'].'</a></li>';
-                                    }
+                                $sql = "SELECT * FROM category";
+                                $result = executeResult($sql);
+                                foreach ($result as $item) {
+                                    echo '<li><a href="thucdon.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
+                                }
                                 ?>
                                 <!-- <li><a href="thucdon.php?page=trasua">Trà sữa</a></li>
                                 <li><a href="thucdon.php?page=monannhe">Món ăn nhẹ</a></li>
@@ -58,6 +57,7 @@ require_once('../database/dbhelper.php');
                 <section class="menu-right">
                     <div class="cart">
                         <a href="../cart.php">
+                            Giỏ hàng
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                         <?php

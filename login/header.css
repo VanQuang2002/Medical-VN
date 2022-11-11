@@ -139,6 +139,7 @@ header section.logo a {
 }
 
 #wrapper header .container section.menu-right .cart a {
+    color: #ffffff;
     padding: 5px;
     text-decoration: none;
 }
