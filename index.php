@@ -7,12 +7,12 @@ require_once('database/dbhelper.php');
 <main>
     <div class="container">
         <div id="ant-layout">
-            <!-- <section class="search-quan">
+            <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="thucdon.php" method="GET">
                     <input name="search" type="text" placeholder="Tìm thiết bị">
                 </form>
-            </section> -->
+            </section>
             <section class="main-layout">
                 <div class="row">
                     <?php
