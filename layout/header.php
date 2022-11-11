@@ -9,11 +9,13 @@ require_once('database/dbhelper.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical-VN</title>
+    <link rel="icon" type="image/png" sizes="32x32" href='./images/icon/icon.png'/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/details.css">
-    <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
+    <!-- <link rel="stylesheet" href="plugin/fontawesome/css/all.css"> -->
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.0-web/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <title>Asm-Nguyễn Đăng Thành-PS18241</title>
 </head>
 
 <body>
@@ -21,13 +23,13 @@ require_once('database/dbhelper.php');
         <header>
             <div class="container">
                 <section class="logo">
-                    <a href="index.php"><img src="images/logo-grabfood.svg" alt=""></a>
+                    <a href="index.php">Medical VN</a>
                 </section>
                 <nav>
                     <ul>
                         <li><a href="index.php">Trang chủ</a></li>
                         <li class="nav-cha">
-                            <a href="thucdon.php?page=thucdon">Thực đơn</a>
+                            <a href="thucdon.php?page=thucdon">Danh mục</a>
                             <ul class="nav-con">
                                 <?php
                                     $sql="SELECT * FROM category";
@@ -48,7 +50,10 @@ require_once('database/dbhelper.php');
                 </nav>
                 <section class="menu-right">
                     <div class="cart">
-                        <a href="cart.php"><img src="images/icon/cart.svg" alt=""></a>
+                        <a href="cart.php">
+                            Giỏ hàng
+                            <i class="fa-solid fa-cart-shopping"></i> 
+                        </a>
                         <?php
                         $cart = [];
                         if (isset($_COOKIE['cart'])) {
@@ -94,3 +99,4 @@ require_once('database/dbhelper.php');
                 </section>
             </div>
         </header>
+    </div>
