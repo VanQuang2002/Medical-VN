@@ -18,7 +18,6 @@ require_once('../database/dbhelper.php');
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
-
   <link rel="stylesheet" href="header.css">
   <title>Đăng ký tài khoản</title>
 </head>
@@ -28,13 +27,13 @@ require_once('../database/dbhelper.php');
     <header>
       <div class="container">
         <section class="logo">
-          <a href="../index.php"><img src="../images/logo-grabfood.svg" alt=""></a>
+          <a href="../index.php">MedicalVN</a>
         </section>
         <nav>
           <ul>
             <li><a href="../index.php">Trang chủ</a></li>
             <li class="nav-cha">
-              <a href="../thucdon.php?page=thucdon">Thực đơn</a>
+              <a href="../thucdon.php?page=thucdon">Danh mục</a>
               <ul class="nav-con">
                 <?php
                 $sql = "SELECT * FROM category";
@@ -55,7 +54,7 @@ require_once('../database/dbhelper.php');
         </nav>
         <section class="menu-right">
           <div class="cart">
-            <a href="../cart.php"><img src="../images/icon/cart.svg" alt=""></a>
+            <a href="../cart.php">Giỏ hàng</a>
             <?php
             $cart = [];
             if (isset($_COOKIE['cart'])) {
