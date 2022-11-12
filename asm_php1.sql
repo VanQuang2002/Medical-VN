@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2022 at 01:19 PM
+-- Generation Time: Nov 12, 2022 at 04:33 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -65,8 +65,9 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `fullname`, `phone_number`, `email`, `address`, `note`, `order_date`) VALUES
-(143, 'Nguyễn Đăng Thành', '0387578520', 'bossryo68a@gmail.com', '68.65.120.213, viet nam', '', '2021-11-07 08:37:06'),
-(144, 'DEMO', '03875723232', 'DEMO@gmail.com', 'DEMO', 'DEMO', '2021-11-07 08:42:16');
+(143, 'Đường Văn Quang', '0387578520', 'quangvan@gmail.com', 'Dong Anh, Viet Nam', '', '2021-11-07 08:37:06'),
+(144, 'Tiến Dũng', '03875723232', 'tiendung@gmail.com', 'Dong Anh HN', 'DEMO', '2021-11-07 08:42:16'),
+(145, 'Đỗ Ngọc Sáng', '+10868983202', 'sangngoc1002@gmail.com', 'Liên Ha Đông Anh', 'Giao buổi sáng giúp em', '2022-11-11 13:25:46');
 
 -- --------------------------------------------------------
 
@@ -89,11 +90,12 @@ CREATE TABLE `order_details` (
 --
 
 INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `id_user`, `num`, `price`, `status`) VALUES
-(149, 143, 2, 7, 3, 35000, 'Đã hủy'),
-(150, 143, 4, 7, 1, 25000, 'Đã hủy'),
-(151, 143, 12, 7, 1, 30000, 'Đã hủy'),
-(152, 143, 14, 7, 1, 35000, 'Đã hủy'),
-(153, 144, 12, 8, 11, 30000, 'Đã nhận hàng');
+(149, 145, 5, 7, 3, 89000, 'Đang chuẩn bị'),
+(150, 145, 4, 7, 1, 949000, 'Đang chuẩn bị'),
+(151, 144, 12, 7, 1, 150000, 'Đang chuẩn bị'),
+(152, 144, 5, 7, 1, 89000, 'Đang chuẩn bị'),
+(153, 144, 20, 8, 11, 658000, 'Đã nhận hàng'),
+(154, 145, 31, 59, 1, 170000, 'Đang chuẩn bị');
 
 -- --------------------------------------------------------
 
@@ -160,7 +162,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `hoten`, `username`, `password`, `phone`, `email`) VALUES
-(7, 'KTPM_N07', 'AdminThanh', 'thanh1010', '+84387578520', 'dtvtx3@gmail.com'),
+(7, 'Medical-VN', 'ktpm_n07', 'ktpm_n07', '0868983202', 'dtvtx3@gmail.com'),
 (8, 'thanh dang', 'thanhthanh', 'thanhthanh', '0387578520', 'bossryo6811@gmail.com'),
 (55, 'thanh dang', 'thanh0990909', 'thanh10', '0387578520', 'bossryoa68@gmail.com'),
 (57, 'thanh dang', 'thanh', 'thanh', '0387578520', 'bossryo681@gmail.com'),
@@ -219,13 +221,13 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
 
 --
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=155;
 
 --
 -- AUTO_INCREMENT for table `product`
