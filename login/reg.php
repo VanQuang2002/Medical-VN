@@ -27,73 +27,70 @@ require_once('../database/dbhelper.php');
   <div id="wrapper" style="padding-bottom: 4rem;">
     <header>
       <div class="container">
-      <section class="logo">
-                    <a href="../index.php">Medical VN</a>
-                </section>
-                <nav>
-                    <ul>
-                        <li><a href="../index.php">Trang chủ</a></li>
-                        <li class="nav-cha">
-                            <a href="thucdon.php?page=thucdon">Danh mục</a>
-                            <ul class="nav-con">
-                                <?php
-                                $sql = "SELECT * FROM category";
-                                $result = executeResult($sql);
-                                foreach ($result as $item) {
-                                    echo '<li><a href="thucdon.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
-                                }
-                                ?>
-                                <!-- <li><a href="thucdon.php?page=trasua">Trà sữa</a></li>
+        <section class="logo">
+          <a href="../index.php"><img src="../images/logo-grabfood.svg" alt=""></a>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="../index.php">Trang chủ</a></li>
+            <li class="nav-cha">
+              <a href="../thucdon.php?page=thucdon">Thực đơn</a>
+              <ul class="nav-con">
+                <?php
+                $sql = "SELECT * FROM category";
+                $result = executeResult($sql);
+                foreach ($result as $item) {
+                  echo '<li><a href="../thucdon.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
+                }
+                ?>
+                <!-- <li><a href="thucdon.php?page=trasua">Trà sữa</a></li>
                                 <li><a href="thucdon.php?page=monannhe">Món ăn nhẹ</a></li>
                                 <li><a href="thucdon.php?page=banhmi">Bánh mì</a></li>
                                 <li><a href="thucdon.php?page=caphe">Cà phê</a></li> -->
-                            </ul>
-                        </li>
-                        <li><a href="../about.php">Về chúng tôi</a></li>
-                        <li><a href="../sendMail.php">Liên hệ</a></li>
-                    </ul>
-                </nav>
-                <section class="menu-right">
-                    <div class="cart">
-                        <a href="../cart.php">
-                            Giỏ hàng
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                        <?php
-                        $cart = [];
-                        if (isset($_COOKIE['cart'])) {
-                            $json = $_COOKIE['cart'];
-                            $cart = json_decode($json, true);
-                        }
-                        $count = 0;
-                        foreach ($cart as $item) {
-                            $count += $item['num']; // đếm tổng số item
-                        }
-                        ?>
-                    </div>
-                    <div class="login">
-                        <?php
-                        if (isset($_COOKIE['username'])) {
-                            echo '<a style="color:black;" href="">' . $_COOKIE['username'] . '</a>
+              </ul>
+            </li>
+            <li><a href="../about.php">Về chúng tôi</a></li>
+            <li><a href="../sendMail.php">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <section class="menu-right">
+          <div class="cart">
+            <a href="../cart.php"><img src="../images/icon/cart.svg" alt=""></a>
+            <?php
+            $cart = [];
+            if (isset($_COOKIE['cart'])) {
+              $json = $_COOKIE['cart'];
+              $cart = json_decode($json, true);
+            }
+            $count = 0;
+            foreach ($cart as $item) {
+              $count += $item['num']; // đếm tổng số item
+            }
+            ?>
+          </div>
+          <div class="login">
+            <?php
+            if (isset($_COOKIE['username'])) {
+              echo '<a style="color:black;" href="">' . $_COOKIE['username'] . '</a>
                             <div class="logout">
                                 <a href="changePass.php"><i class="fas fa-exchange-alt"></i>Đổi mật khẩu</a> <br>
                                 <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
                             </div>
                             ';
-                        } else {
-                            echo '<a href="login.php"">Đăng nhập</a>';
-                        }
+            } else {
+              echo '<a href="login.php"">Đăng nhập</a>';
+            }
 
-                        ?>
+            ?>
 
 
-                    </div>
-                </section>
+          </div>
+        </section>
       </div>
     </header>
     <div class="container">
       <form action="reg.php" method="POST">
-        <h1 style="text-align: center;">Đăng ký</h1>
+        <h1 style="text-align: center;">Đăng ký hệ thống</h1>
         <div class="form-group">
           <label for="">Họ và tên:</label>
           <input type="text" name="name" class="form-control" placeholder="Họ và tên" required="required">

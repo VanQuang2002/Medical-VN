@@ -17,8 +17,8 @@ require_once('../database/dbhelper.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="plugin/fontawesome/css/all.css"> -->
-    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
+
     <link rel="stylesheet" href="header.css">
 
     <title>Đăng nhập</title>
@@ -29,19 +29,19 @@ require_once('../database/dbhelper.php');
         <header>
             <div class="container">
                 <section class="logo">
-                    <a href="../index.php">Medical VN</a>
+                    <a href="../index.php">MedicalVN</a>
                 </section>
                 <nav>
                     <ul>
                         <li><a href="../index.php">Trang chủ</a></li>
                         <li class="nav-cha">
-                            <a href="thucdon.php?page=thucdon">Danh mục</a>
+                            <a href="../thucdon.php?page=thucdon">Danh mục</a>
                             <ul class="nav-con">
                                 <?php
                                 $sql = "SELECT * FROM category";
                                 $result = executeResult($sql);
                                 foreach ($result as $item) {
-                                    echo '<li><a href="thucdon.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
+                                    echo '<li><a href="../thucdon.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
                                 }
                                 ?>
                                 <!-- <li><a href="thucdon.php?page=trasua">Trà sữa</a></li>
@@ -56,10 +56,7 @@ require_once('../database/dbhelper.php');
                 </nav>
                 <section class="menu-right">
                     <div class="cart">
-                        <a href="../cart.php">
-                            Giỏ hàng
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
+                        <a href="../cart.php">Giỏ hàng</a>
                         <?php
                         $cart = [];
                         if (isset($_COOKIE['cart'])) {
@@ -122,7 +119,7 @@ require_once('../database/dbhelper.php');
         execute($sql);
         $con = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
         $user = mysqli_query($con, $sql);
-        if ($username == 'ktpm_n07' && $password == 'dtvtx3') {
+        if ($username == 'ktpm_n07' && $password == 'ktpm_n07') {
             echo '<script language="javascript">
                 alert("Đăng nhập Admin thành công!"); 
                 window.location = "../admin/index.php";
