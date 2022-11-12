@@ -5,7 +5,7 @@
         <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="thucdon.php" method="GET">
-                    <input name="search" type="text" placeholder="Tìm món hoặc thức ăn">
+                    <input name="search" type="text" placeholder="Tìm thiết bị">
                 </form>
             </section>
         </div>
