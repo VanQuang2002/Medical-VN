@@ -75,14 +75,14 @@ require_once('database/dbhelper.php');
                         if (isset($_COOKIE['username'])) {
                             $username=$_COOKIE['username'];
                             if ($username == 'AdminThanh'|| $username == 'admin') {
-                                echo '<a style="color:black;" href="">' . $_COOKIE['username'] . '</a>
+                                echo '<a style="color:white; font-variant-caps: all-small-caps; font-style: italic;" href="">' . $_COOKIE['username'] . '</a>
                                 <div class="logout">
                                     <a href="admin/"><i class="fas fa-user-edit"></i>Admin</a> <br>
                                     <a href="login/logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
                                 </div>';
                             }
                             else{
-                                echo '<a style="color:black;" href="">' . $_COOKIE['username'] . '</a>
+                                echo '<a style="color:white;color:white; font-variant-caps: all-small-caps; font-style: italic;" href="">' . $_COOKIE['username'] . '</a>
                             <div class="logout">
                                 <a href="login/changePass.php"><i class="fas fa-exchange-alt"></i>Đổi mật khẩu</a> <br>
                                 <a href="login/logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
