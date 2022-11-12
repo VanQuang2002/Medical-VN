@@ -28,11 +28,11 @@ require_once('../database/dbhelper.php');
     <header>
       <div class="container">
       <section class="logo">
-                    <a href="index.php">Medical VN</a>
+                    <a href="../index.php">Medical VN</a>
                 </section>
                 <nav>
                     <ul>
-                        <li><a href="index.php">Trang chủ</a></li>
+                        <li><a href="../index.php">Trang chủ</a></li>
                         <li class="nav-cha">
                             <a href="thucdon.php?page=thucdon">Danh mục</a>
                             <ul class="nav-con">
@@ -49,8 +49,8 @@ require_once('../database/dbhelper.php');
                                 <li><a href="thucdon.php?page=caphe">Cà phê</a></li> -->
                             </ul>
                         </li>
-                        <li><a href="about.php">Về chúng tôi</a></li>
-                        <li><a href="sendMail.php">Liên hệ</a></li>
+                        <li><a href="../about.php">Về chúng tôi</a></li>
+                        <li><a href="../sendMail.php">Liên hệ</a></li>
                     </ul>
                 </nav>
                 <section class="menu-right">
