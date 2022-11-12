@@ -43,7 +43,7 @@
         </ul>
       </div>
       <div class="icon">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.facebook.com/ngoc.sang2211" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
       </div>
