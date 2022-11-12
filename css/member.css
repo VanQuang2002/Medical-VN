@@ -28,3 +28,24 @@
         flex-direction: row;
     }
 }
+/* new letter */
+.container .section-title {
+    font-size: 4rem;
+}
+.newsletter{
+    padding-bottom: 6rem;
+}
+.form-container-inner h2, p {
+    text-align: center;
+}
+.newsletter-title{
+    font-size: 2rem;
+}
+
+.newsletter-description{
+    margin-bottom: 3rem;
+}
+.form {
+    display: flex;
+    justify-content: center;
+}

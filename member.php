@@ -30,6 +30,29 @@ require_once('database/dbhelper.php');
                 believe that I also fit in well with the company.</p>
         </div>
     </div>
+    <!-- Newsletter -->
+    <section class="newsletter section">
+
+        <div class="container">
+
+            <h1 class="title section-title" data-name="Newsletter">Newsletter</h1>
+
+            <div class="form-container-inner">
+                <h2 class="title newsletter-title">Liên Hệ Chúng Tôi</h2>
+                <p class="newsletter-description">Mọi thắc mắc của bạn sẽ được giải đáp nhanh chóng</p>
+
+                <form action="" class="form">
+                    <input class="form-input" type="text" placeholder="Nhập câu hỏi của ban(demo)">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-line"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
 </main>
 <?php require_once('layout/footer.php'); ?>
 </div>
