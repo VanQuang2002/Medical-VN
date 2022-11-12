@@ -38,14 +38,14 @@
       </div>
       <div class="col">
         <ul>
-          <li><a href="">Liên hệ</a></li>
-          <li><a href="">Thành viên</a></li>
+          <li><a href="./member.php">Liên hệ</a></li>
+          <li><a href="./member.php">Thành viên</a></li>
         </ul>
       </div>
       <div class="icon">
-        <a href="https://www.facebook.com/ngoc.sang2211" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="./member.php" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="./member.php"><i class="fa-brands fa-instagram"></i></a>
+        <a href="./member.php"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </div>
     <!-- <div class="bottom">
