@@ -21,7 +21,7 @@ require_once('database/dbhelper.php');
                 myself with new products, conducting sales talks and transferring orders.</p>
         </div>
         <div class="member_item">
-            <h1>ĐỖ Tiến Dũng</h1>
+            <h1>ĐỖ TIẾN DŨNG</h1>
             <p>Your job list sounds great! I hope that this will enable me
                 to develop personal and professional development opportunities.
                 I like your focus and image in this industry very well, so I
@@ -39,12 +39,11 @@ require_once('database/dbhelper.php');
 
             <div class="form-container-inner">
                 <h2 class="title newsletter-title">Liên Hệ Chúng Tôi</h2>
-                <p class="newsletter-description">Mọi thắc mắc của bạn sẽ được giải đáp nhanh chóng</p>
-
+                <p class="newsletter-description">Mọi thắc mắc của bạn sẽ được giải đáp <br> nhanh chóng</p>
                 <form action="" class="form">
-                    <input class="form-input" type="text" placeholder="Nhập câu hỏi của ban(demo)">
+                    <input class="form-input" type="text" placeholder="Nhập câu hỏi (demo)">
                     <button class="btn form-btn" type="submit">
-                        <i class="ri-mail-send-line"></i>
+                    <i class="fa-solid fa-envelope"></i>
                     </button>
                 </form>
 

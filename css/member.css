@@ -30,7 +30,7 @@
 }
 /* new letter */
 .container .section-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .newsletter{
     padding-bottom: 6rem;
@@ -41,11 +41,43 @@
 .newsletter-title{
     font-size: 2rem;
 }
-
 .newsletter-description{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+.form-container-inner {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .form {
+    height: 65px;
+    max-width: 40%;
     display: flex;
     justify-content: center;
+}
+.form-input, .form-btn {
+    display: inline-block;
+    outline: none;
+    border: 2px solid rgba(163, 163, 163, 0.585);
+    padding: 1rem;
+}
+.form-input {
+    border-right: none;
+    width: 100%;
+}
+
+input, button {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+}
+button i {
+    font-size: 2rem;
+}
+button {
+    background-color: #f1f1f1;
 }
