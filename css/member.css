@@ -7,12 +7,25 @@
     justify-content: space-evenly;
 }
 .member_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
     padding: 20px;
-    width: 30%;
+    width: 29%;
+}
+.member_item img {
+    
 }
 .member_item h1 {
-    margin-bottom: 10px;
+    margin: 0px 0 10px 0;
+}
+.member_item p { 
+    margin: 16px 0 7px 0;
+}
+.member_item img { 
+    width: 95%;
+    max-height: 90%;
 }
 .member_item:nth-child(1) {
     background-color: rgb(245, 250, 215);
@@ -28,6 +41,8 @@
         flex-direction: row;
     }
 }
+/* member */
+
 /* new letter */
 .container .section-title {
     font-size: 3.5rem;
