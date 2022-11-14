@@ -39,7 +39,7 @@ require_once('database/dbhelper.php');
 
             <div class="form-container-inner">
                 <h2 class="title newsletter-title">Liên Hệ Chúng Tôi</h2>
-                <p class="newsletter-description">Mọi thắc mắc của bạn sẽ được giải đáp <br> nhanh chóng</p>
+                <p class="newsletter-description">Mọi thắc mắc của bạn sẽ được giải đáp nhanh chóng</p>
                 <form action="" class="form">
                     <input class="form-input" type="text" placeholder="Nhập câu hỏi (demo)">
                     <button class="btn form-btn" type="submit">
