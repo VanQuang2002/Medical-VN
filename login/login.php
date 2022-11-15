@@ -126,10 +126,10 @@ require_once('../database/dbhelper.php');
             </script>';
             $username = trim(strip_tags($_POST['username']));
             $password = trim(strip_tags($_POST['password']));
-            session_start();
-            setcookie("username", $username, time() + 30 * 24 * 60 * 60, '/');
-            setcookie("password", $password, time() + 30 * 24 * 60 * 60, '/');
-        } else if (mysqli_num_rows($user) > 0) {
+            // session_start();
+            // setcookie("username", $username, time() + 30 * 24 * 60 * 60, '/');
+            // setcookie("password", $password, time() + 30 * 24 * 60 * 60, '/');
+        }else if (mysqli_num_rows($user) > 0 && $username != 'ktpm_n07' && $password != 'ktpm_n07') {
             echo '<script language="javascript">
                 alert("Đăng nhập thành công!"); 
                 window.location = "../index.php";
