@@ -3,7 +3,7 @@ require_once('../database/config.php');
 require_once('../database/dbhelper.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -21,18 +21,19 @@ require_once('../database/dbhelper.php');
 
     <title>Đăng nhập</title>
 </head>
+
 <body>
     <div id="wrapper" style="padding-bottom: 4rem;">
-    <header>
+        <header>
             <div class="container">
                 <section class="logo">
-                    <a href="../index.php"><img src="../images/logo-grabfood.svg" alt=""></a>
+                    <a href="../index.php">MedicalVN</a>
                 </section>
                 <nav style="padding: 15px 10px;">
                     <ul>
                         <li><a href="../index.php">Trang chủ</a></li>
                         <li class="nav-cha">
-                            <a href="../thucdon.php?page=thucdon">Thực đơn</a>
+                            <a href="../thucdon.php?page=thucdon">Danh mục</a>
                             <ul class="nav-con">
                                 <?php
                                 $sql = "SELECT * FROM category";
@@ -53,7 +54,10 @@ require_once('../database/dbhelper.php');
                 </nav>
                 <section class="menu-right">
                     <div class="cart">
-                        <a href="../cart.php"><img src="../images/icon/cart.svg" alt=""></a>
+                        <a href="../cart.php">
+                            Giỏ hàng
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
                         <?php
                         $cart = [];
                         if (isset($_COOKIE['cart'])) {
@@ -69,7 +73,7 @@ require_once('../database/dbhelper.php');
                     <div class="login">
                         <?php
                         if (isset($_COOKIE['username'])) {
-                            echo '<a style="color:black;" href="">' . $_COOKIE['username'] . '</a>
+                            echo '<a style="color:white; font-variant-caps: all-small-caps; font-style: italic;" href="">' . $_COOKIE['username'] . '</a>
                             <div class="logout">
                                 <a href="changePass.php"><i class="fas fa-exchange-alt"></i>Đổi mật khẩu</a> <br>
                                 <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>

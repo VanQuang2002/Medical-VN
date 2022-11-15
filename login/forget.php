@@ -61,7 +61,7 @@ require_once('../database/dbhelper.php');
                     <div class="login">
                         <?php
                         if (isset($_COOKIE['username'])) {
-                            echo '<a style="color:black;" href="">' . $_COOKIE['username'] . '</a>
+                            echo '<a style="color:white; font-variant-caps: all-small-caps; font-style: italic;" href="">' . $_COOKIE['username'] . '</a>
                             <div class="logout">
                                 <a href="login/changePass.php"><i class="fas fa-exchange-alt"></i>Đổi mật khẩu</a> <br>
                                 <a href="login/logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
