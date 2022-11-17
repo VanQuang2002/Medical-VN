@@ -19,10 +19,10 @@
             }
             switch ($page) {
                 case "thucdon":
-                    require('menu-con/trasua.php');
-                    require('menu-con/caphe.php');
-                    require('menu-con/monannhe.php');
-                    require('menu-con/banhmi.php');
+                    require('menu-con/nhiet_ke.php');
+                    require('menu-con/may_massage.php');
+                    require('menu-con/dung_cu_test.php');
+                    require('menu-con/may_xong.php');
                     break;
                 default:
                     break;

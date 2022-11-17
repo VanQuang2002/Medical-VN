@@ -8,7 +8,7 @@ require_once('utils/utility.php');
 // $price = $order_details_List['price'];
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
