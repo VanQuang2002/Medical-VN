@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <?php
 require_once('database/config.php');
 require_once('database/dbhelper.php');
-?>
+?> -->
 
 
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
-    <title>Asm-Nguyễn Đăng Thành-PS18241</title>
-</head>
+    <title>KTPm_N07</title>
+</head> -->
 
 <body>
     <div id="wrapper">
-        <header>
+        <!-- <header>
             <div class="container">
                 <section class="logo">
                     <a href=""><img src="images/logo-grabfood.svg" alt=""></a>
@@ -37,22 +37,22 @@ require_once('database/dbhelper.php');
                     </div>
                 </section>
             </div>
-        </header>
+        </header> -->
         <!-- END HEADR -->
         <main>
             <div class="container">
-                <div id="ant-layout">
+                <!-- <div id="ant-layout">
                     <section class="search-quan">
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="Tìm món hoặc thức ăn">
                     </section>
-                </div>
+                </div> -->
                 <div class="bg-grey">
 
                 </div>
                 <!-- END LAYOUT  -->
                 <section class="main">
-                    <section class="oder-product">
+                    <!-- <section class="oder-product">
                         <div class="title">
                             <section class="main-order">
                                 <h1>Tên sp</h1>
@@ -105,10 +105,10 @@ require_once('database/dbhelper.php');
                                 ?>
                             </div>
                         </aside>
-                    </section>
+                    </section> -->
 
                     <!-- end Món ngon gần bạn -->
-                    <section class="comment">
+                    <!-- <section class="comment">
                         <h1>Nhận xét</h1>
                         <div class="container">
                             <div class="post">
@@ -117,10 +117,10 @@ require_once('database/dbhelper.php');
                             </div>
                             
                         </div>
-                    </section>
+                    </section> -->
 
                     <!-- end comment -->
-                    <section class="restaurants">
+                    <!-- <section class="restaurants">
                         <div class="title">
                             <h1>Thực đơn tại quán <span class="green">Thành Coffee</span></h1>
                         </div>
@@ -158,7 +158,7 @@ require_once('database/dbhelper.php');
                                 ?>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                 </section>
             </div>
         </main>

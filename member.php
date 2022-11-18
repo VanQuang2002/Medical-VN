@@ -9,17 +9,32 @@ require_once('database/dbhelper.php');
     <!-- member -->
     <div class="main_member">
         <div class="member_item">
-            <img src="./images/admin/avata.jpg" alt="">
+            <img src="./images/img_member/ngoc_sang.jpg" alt="" class="image">
+            <div class="middle">
+                <a href="https://www.facebook.com/ngoc.sang2211">
+                    <div class="text">Truy cập</div>
+                </a>
+            </div>
             <p>2022 <i class="fa-brands fa-facebook"></i> Facebook</p>
             <h1>ĐỖ NGỌC SÁNG</h1>
         </div>
         <div class="member_item">
-            <img src="./images/admin/avata.jpg" alt="">
+            <img src="./images/img_member/van_quangs.jpg" alt="" class="image">
+            <div class="middle">
+                <a href="https://www.facebook.com/vanquang2002hust">
+                    <div class="text">Truy cập</div>
+                </a>
+            </div>
             <p>2022 <i class="fa-brands fa-facebook"></i> Facebook</p>
             <h1>ĐƯỜNG VĂN QUANG</h1>
         </div>
         <div class="member_item">
-            <img src="./images/admin/avata.jpg" alt="">
+            <img src="./images/img_member/tien_dung.jpg" alt="" class="image">
+            <div class="middle">
+                <a href="https://www.facebook.com/profile.php?id=100006580607221">
+                    <div class="text">Truy cập</div>
+                </a>
+            </div>
             <p>2022 <i class="fa-brands fa-facebook"></i> Facebook</p>
             <h1>ĐỖ TIẾN DŨNG</h1>
         </div>
