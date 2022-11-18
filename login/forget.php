@@ -9,7 +9,7 @@ require_once('../database/dbhelper.php');
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
-
+    <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png'/>
     <link rel="stylesheet" href="header.css">
 </head>
 

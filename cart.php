@@ -36,6 +36,7 @@ require_once('utils/utility.php');
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png'/>
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/cart.css">
     <title>Giỏ hàng</title>
