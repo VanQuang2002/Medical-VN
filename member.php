@@ -11,7 +11,7 @@ require_once('database/dbhelper.php');
         <div class="member_item">
             <img src="./images/img_member/ngoc_sang.jpg" alt="" class="image">
             <div class="middle">
-                <a href="https://www.facebook.com/ngoc.sang2211">
+                <a href="https://www.facebook.com/ngoc.sang2211"  target="_blank">
                     <div class="text">Truy cập</div>
                 </a>
             </div>
@@ -21,7 +21,7 @@ require_once('database/dbhelper.php');
         <div class="member_item">
             <img src="./images/img_member/van_quangs.jpg" alt="" class="image">
             <div class="middle">
-                <a href="https://www.facebook.com/vanquang2002hust">
+                <a href="https://www.facebook.com/vanquang2002hust" target="_blank">
                     <div class="text">Truy cập</div>
                 </a>
             </div>
@@ -31,7 +31,7 @@ require_once('database/dbhelper.php');
         <div class="member_item">
             <img src="./images/img_member/tien_dung.jpg" alt="" class="image">
             <div class="middle">
-                <a href="https://www.facebook.com/profile.php?id=100006580607221">
+                <a href="https://www.facebook.com/profile.php?id=100006580607221" target="_blank">
                     <div class="text">Truy cập</div>
                 </a>
             </div>
