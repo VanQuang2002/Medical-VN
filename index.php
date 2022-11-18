@@ -6,7 +6,7 @@ require_once('database/dbhelper.php');
 <!-- END HEADR -->
 <main>
     <div class="container">
-        <div id="ant-layout">
+        <div id="ant-layout" style="margin-top: 20px;">
             <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="danh_sach.php" method="GET">
@@ -35,7 +35,6 @@ require_once('database/dbhelper.php');
             </section>
         </div>
         <div class="bg-grey">
-
         </div>
         <!-- END LAYOUT  -->
         <section class="main">
@@ -105,7 +104,7 @@ require_once('database/dbhelper.php');
                                 echo '
                                 <div class="col">
                                     <a href="details.php?id=' . $item['id'] . '">
-                                        <img class="thumbnail" src="admin/product/'. $item['thumbnail'] . '" alt="">
+                                        <img class="thumbnail" src="admin/product/' . $item['thumbnail'] . '" alt="">
                                         <div class="title">
                                             <p>' . $item['title'] . '</p>
                                         </div>
