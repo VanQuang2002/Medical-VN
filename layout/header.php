@@ -29,19 +29,19 @@ require_once('database/dbhelper.php');
                     <ul>
                         <li><a href="index.php">Trang chủ</a></li>
                         <li class="nav-cha">
-                            <a href="thucdon.php?page=thucdon">Danh mục</a>
+                            <a href="danh_sach.php?page=danh_sach">Danh mục</a>
                             <ul class="nav-con">
                                 <?php
                                     $sql="SELECT * FROM category";
                                     $result=executeResult($sql);
                                     foreach($result as $item){
-                                        echo '<li><a href="thucdon.php?id_category=' . $item['id'] . '">'.$item['name'].'</a></li>';
+                                        echo '<li><a href="danh_sach.php?id_category=' . $item['id'] . '">'.$item['name'].'</a></li>';
                                     }
                                 ?>
-                                <!-- <li><a href="thucdon.php?page=trasua">Trà sữa</a></li>
-                                <li><a href="thucdon.php?page=monannhe">Món ăn nhẹ</a></li>
-                                <li><a href="thucdon.php?page=banhmi">Bánh mì</a></li>
-                                <li><a href="thucdon.php?page=caphe">Cà phê</a></li> -->
+                                <!-- <li><a href="danh_sach.php?page=trasua">Trà sữa</a></li>
+                                <li><a href="danh_sach.php?page=monannhe">Món ăn nhẹ</a></li>
+                                <li><a href="danh_sach.php?page=banhmi">Bánh mì</a></li>
+                                <li><a href="danh_sach.php?page=caphe">Cà phê</a></li> -->
                             </ul>
                         </li>
                         <li><a href="about.php">Về chúng tôi</a></li>
