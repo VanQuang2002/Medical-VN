@@ -1,7 +1,7 @@
 <?php require('layout/header.php') ?>
 <main>
     <div class="container">
-        <div id="ant-layout">
+        <div id="ant-layout" style="margin-top: 20px;">
         <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="danh_sach.php" method="GET">
