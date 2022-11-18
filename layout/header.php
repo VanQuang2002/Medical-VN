@@ -45,7 +45,7 @@ require_once('database/dbhelper.php');
                             </ul>
                         </li>
                         <li><a href="about.php">Về chúng tôi</a></li>
-                        <li><a href="sendMail.php">Liên hệ</a></li>
+                        <li><a href="member.php">Liên hệ</a></li>
                     </ul>
                 </nav>
                 <section class="menu-right">
