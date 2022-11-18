@@ -17,6 +17,7 @@ require_once('../database/dbhelper.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png'/>
     <link rel="stylesheet" href="header.css">
 
     <title>Đăng nhập</title>
