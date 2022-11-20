@@ -19,9 +19,9 @@ require_once('database/dbhelper.php');
             <h1>ĐỖ NGỌC SÁNG</h1>
         </div>
         <div class="member_item">
-            <img src="./images/img_member/van_quangs.jpg" alt="" class="image">
+            <img src="./images/img_member/van_quang.jpg" alt="" class="image">
             <div class="middle">
-                <a href="https://www.facebook.com/vanquang2002hust" target="_blank">
+                <a href="https://vanquang2002.github.io/my-profile/" target="_blank">
                     <div class="text">Truy cập</div>
                 </a>
             </div>
