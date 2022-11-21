@@ -18,7 +18,7 @@
                 $page = "";
             }
             switch ($page) {
-                case "thucdon":
+                case "danh_sach":
                     require('menu-con/nhiet_ke.php');
                     require('menu-con/may_massage.php');
                     require('menu-con/dung_cu_test.php');

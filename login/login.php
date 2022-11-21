@@ -120,26 +120,26 @@ require_once('../database/dbhelper.php');
         $con = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
         $user = mysqli_query($con, $sql);
         if ($username == 'ktpm_n07' && $password == 'ktpm_n07') {
+            $username = trim(strip_tags($_POST['username']));
+            $password = trim(strip_tags($_POST['password']));
             echo '<script language="javascript">
                 alert("Đăng nhập Admin thành công!"); 
                 window.location = "../admin/index.php";
             </script>';
-            $username = trim(strip_tags($_POST['username']));
-            $password = trim(strip_tags($_POST['password']));
             // session_start();
             // setcookie("username", $username, time() + 30 * 24 * 60 * 60, '/');
             // setcookie("password", $password, time() + 30 * 24 * 60 * 60, '/');
-            // && $username != 'ktpm_n07' && $password != 'ktpm_n07'
-        }else if (mysqli_num_rows($user) > 0) {
+            
+        }else if (mysqli_num_rows($user) > 0 && $username != 'ktpm_n07' && $password != 'ktpm_n07') {
+            $username = trim(strip_tags($_POST['username']));
+            $password = trim(strip_tags($_POST['password']));
+            session_start();
+            setcookie("username", $username, time() + 30 * 24 * 60 * 60, '/');
+            setcookie("password", $password, time() + 30 * 24 * 60 * 60, '/');
             echo '<script language="javascript">
                 alert("Đăng nhập thành công!"); 
                 window.location = "../index.php";
             </script>';
-            $username = trim(strip_tags($_POST['username']));
-            $password = trim(strip_tags($_POST['password']));
-            // session_start();
-            // setcookie("username", $username, time() + 30 * 24 * 60 * 60, '/');
-            // setcookie("password", $password, time() + 30 * 24 * 60 * 60, '/');
         } else {
             echo '<script language="javascript">
                 alert("Tài khoản và mật khẩu không chính xác !");
