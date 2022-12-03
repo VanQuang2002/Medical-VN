@@ -24,6 +24,7 @@ require_once('utils/utility.php');
     <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png'/>
     <title>Giỏ hàng</title>
 </head>
 
