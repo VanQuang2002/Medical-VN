@@ -18,7 +18,7 @@ require_once('../database/dbhelper.php');
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
-    <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png'/>
+    <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png' />
     <link rel="stylesheet" href="header.css">
 
     <title>Đăng nhập</title>
@@ -76,15 +76,11 @@ require_once('../database/dbhelper.php');
                             <div class="logout">
                                 <a href="changePass.php"><i class="fas fa-exchange-alt"></i>Đổi mật khẩu</a> <br>
                                 <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
-                            </div>
-                            ';
+                            </div>';
                         } else {
                             echo '<a href="login.php"">Đăng nhập</a>';
                         }
-
                         ?>
-
-
                     </div>
                 </section>
             </div>
@@ -129,8 +125,8 @@ require_once('../database/dbhelper.php');
             // session_start();
             // setcookie("username", $username, time() + 30 * 24 * 60 * 60, '/');
             // setcookie("password", $password, time() + 30 * 24 * 60 * 60, '/');
-            
-        }else if (mysqli_num_rows($user) > 0 && $username != 'ktpm_n07' && $password != 'ktpm_n07') {
+
+        } else if (mysqli_num_rows($user) > 0 && $username != 'ktpm_n07' && $password != 'ktpm_n07') {
             $username = trim(strip_tags($_POST['username']));
             $password = trim(strip_tags($_POST['password']));
             session_start();

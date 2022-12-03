@@ -1,3 +1,6 @@
+.container {
+    margin-top: 20px;
+}
 #wrapper header {
     width: 100%;
     margin: 0px auto;
@@ -54,11 +57,11 @@ header section.logo a {
 #wrapper header .container nav ul li a::after {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 0px;
     height: 3px;
     width: 100%;
-    background-color: #00b14f;
+    background-color: #4af1fd;
     display: none;
 }
 
@@ -78,8 +81,8 @@ header section.logo a {
     display: flex;
     flex-flow: column;
     left: 0;
-    top: 35px;
-    width: 150%;
+    top: 95%;
+    width: 160%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 5px 0px rgb(212, 212, 212);
     z-index: 100;
