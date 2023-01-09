@@ -33,10 +33,10 @@ require_once('../database/dbhelper.php');
                                     echo '<li><a href="../danh_sach.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
                                 }
                                 ?>
-                                <!-- <li><a href="danh_sach.php?page=trasua">Trà sữa</a></li>
-                                <li><a href="danh_sach.php?page=monannhe">Món ăn nhẹ</a></li>
-                                <li><a href="danh_sach.php?page=banhmi">Bánh mì</a></li>
-                                <li><a href="danh_sach.php?page=caphe">Cà phê</a></li> -->
+                                <!-- <li><a href="danh_sach.php?page=nhiet_ke">Nhiệt kế</a></li>
+                                <li><a href="danh_sach.php?page=may_massage">Máy Massage</a></li>
+                                <li><a href="danh_sach.php?page=dung_cu_test"></a>Dụng cụ kiểm tra</li>
+                                <li><a href="danh_sach.php?page=may_xong">Máy Xông</a></li> -->
                             </ul>
                         </li>
                         <li><a href="../about.php">Về chúng tôi</a></li>

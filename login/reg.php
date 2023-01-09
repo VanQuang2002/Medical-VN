@@ -17,7 +17,7 @@ require_once('../database/dbhelper.php');
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png'/>
+  <link rel="icon" type="image/png" sizes="32x32" href='../images/icon/icon.png' />
   <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
   <link rel="stylesheet" href="header.css">
   <title>Đăng ký tài khoản</title>
@@ -43,10 +43,10 @@ require_once('../database/dbhelper.php');
                   echo '<li><a href="../danh_sach.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
                 }
                 ?>
-                <!-- <li><a href="danh_sach.php?page=trasua">Trà sữa</a></li>
-                                <li><a href="danh_sach.php?page=monannhe">Món ăn nhẹ</a></li>
-                                <li><a href="danh_sach.php?page=banhmi">Bánh mì</a></li>
-                                <li><a href="danh_sach.php?page=caphe">Cà phê</a></li> -->
+                <!-- <li><a href="danh_sach.php?page=nhiet_ke">Nhiệt kế</a></li>
+                <li><a href="danh_sach.php?page=may_massage">Máy Massage</a></li>
+                <li><a href="danh_sach.php?page=dung_cu_test"></a>Dụng cụ kiểm tra</li>
+                <li><a href="danh_sach.php?page=may_xong">Máy Xông</a></li> -->
               </ul>
             </li>
             <li><a href="../about.php">Về chúng tôi</a></li>
@@ -159,10 +159,10 @@ require_once('../database/dbhelper.php');
       }
       $sql = 'INSERT INTO user(hoten,username,password,phone,email) values ("' . $name . '","' . $username . '","' . $pass . '","' . $phone . '","' . $email . '")';
       execute($sql);
-      echo '<script language="javascript">
-                alert("Bạn đăng ký thành công!");
-                window.location = "login.php";
-             </script>';
+      // echo '<script language="javascript">
+      //           alert("Bạn đăng ký thành công!");
+      //           window.location = "login.php";
+      //        </script>';
     } else {
       echo '<script language="javascript">
     alert("hãy nhập đủ thông tin!");
