@@ -3,8 +3,8 @@
 
 
 TÀI KHOẢN ADMIN:
-username: AdminThanh 
-password: thanh1010
+username: ktpm_n07
+password: ktpm_n07
 
 
 
