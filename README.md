@@ -1,7 +1,7 @@
 # Medical-VN
 ## Getting started
 ### Dowload Xampp
-Windows/MacOS/Linux: [title](https://www.apachefriends.org/download.html)
+Windows/MacOS/Linux: [Download Xampp](https://www.apachefriends.org/download.html)
 ### Code
 Clone this repository: https://github.com/vanquang203546/Medical-VN.git
 ### Move folder
